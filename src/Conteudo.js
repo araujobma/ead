@@ -32,14 +32,14 @@ function Conteudo() {
          </Card>
          </Col>
          <br></br><br></br>
-         <Col xs={10} md={10} lg={10} >
+         <Col xs={12} md={10} lg={10} >
             <Card>
                       
             <Card.Body>
-            <Col xs={3} md={3} lg={3} style={{float: 'none', display: 'inline-block'}}>
+            <Col xs={12} md={3} lg={3} style={{float: 'none', display: 'inline-block'}}>
                 <Image src='math1.jfif' fluid />
             </Col>
-            <Col xs={9} md={9} lg={9} style={{float: 'none', display: 'inline-block'}}>
+            <Col xs={12} md={9} lg={9} style={{float: 'none', display: 'inline-block'}}>
                 <Card.Title>Matemática para sexto ano de ensino fundamental.</Card.Title>
                 <Card.Text>Tiago de Almeida Marchi</Card.Text>
                 <Card.Text>8,5 total horas - 92 aulas - todos os níveis</Card.Text>
@@ -55,10 +55,10 @@ function Conteudo() {
             <Card>
                       
             <Card.Body>
-            <Col xs={3} md={3} lg={3} style={{float: 'none', display: 'inline-block'}}>
+            <Col xs={12} md={3} lg={3} style={{float: 'none', display: 'inline-block'}}>
                 <Image src='math2.jfif' fluid />
             </Col>
-            <Col xs={9} md={9} lg={9} style={{float: 'none', display: 'inline-block'}}>
+            <Col xs={12} md={9} lg={9} style={{float: 'none', display: 'inline-block'}}>
                 <Card.Title>Matemática do Ensino Fundamental</Card.Title>
                 <Card.Text>Aprenda com o passo a passo de exercícios.<br></br>Renata Melo PhD</Card.Text>
                 
@@ -75,10 +75,10 @@ function Conteudo() {
             <Card>
                       
             <Card.Body>
-            <Col xs={3} md={3} lg={3} style={{float: 'none', display: 'inline-block'}}>
+            <Col xs={12} md={3} lg={3} style={{float: 'none', display: 'inline-block'}}>
                 <Image src='math3.jfif' fluid />
             </Col>
-            <Col xs={9} md={9} lg={9} style={{float: 'none', display: 'inline-block'}}>
+            <Col xs={12} md={9} lg={9} style={{float: 'none', display: 'inline-block'}}>
                 <Card.Title>Potenciação e Radiciação | 9º ano | Unidade 1</Card.Title>
                 <Card.Text>Curso de Álgebra sobre potenciação e radiciação com o nível do 9º ano do Ensino Fundamental II.
                     <br></br> Matemática Resolvida
