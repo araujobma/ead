@@ -1,12 +1,11 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Carousel from 'react-bootstrap/Carousel';
 import Image from 'react-bootstrap/Image';
-import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { BsPersonSquare, BsFolder } from "react-icons/bs";
+import { Link } from 'react-router-dom'
 
-function Conteudo() {
+function Conteudo(props) {
     return (
         <Col xs={12} md={12} lg={12} style={{float: 'none', display: 'inline-block'}}> 
         <Col xs={12} md={6} lg={4} style={{float: 'none', display: 'inline-block'}}>  
@@ -72,6 +71,7 @@ function Conteudo() {
             </Card.Body>
         
             </Card>
+            <Link to='/video' onClick={()=>props.setTituloAula(props.titulo)}>
             <Card>
                       
             <Card.Body>
@@ -93,6 +93,7 @@ function Conteudo() {
             </Card.Body>
         
             </Card>
+            </Link>
          </Col>
          </Col>
     );

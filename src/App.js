@@ -7,16 +7,21 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Login from './Login'
 import Conteudo from './Conteudo'
+import Video from './Video'
+
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  
 } from "react-router-dom";
 
 function App() {
   const [user, setUser] = useState(
+    ''
+  );
+  const [tituloAula, setTituloAula] = useState(
     ''
   );
   return (
@@ -27,6 +32,7 @@ function App() {
       <Navbar bg="light">
         <Navbar.Brand href="/">Plataforma EAD</Navbar.Brand>
         <Badge>{user}</Badge>
+        <Badge>{tituloAula}</Badge>
       </Navbar>
       </Col> 
         <Switch>
@@ -36,7 +42,13 @@ function App() {
           </Route>
 
           <Route exact path='/conteudo'>
-            <Conteudo/>
+            <Conteudo setTituloAula={setTituloAula}
+              titulo={"Curso de Álgebra sobre potenciação e radiciação com o nível do 9º ano do Ensino Fundamental II"}
+             />
+          </Route>
+
+          <Route exact path='/video'>
+            <Video />
           </Route>
 
           <Route path='/'>
