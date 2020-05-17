@@ -1,10 +1,15 @@
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
 import Col from 'react-bootstrap/Col';
 import { BsPersonSquare, BsFolder } from "react-icons/bs";
 
 function Video() {
+    useEffect(() => {
+        // Update the document title using the browser API
+        window.scrollTo(0,0);
+    });
+
     return (
           
         
